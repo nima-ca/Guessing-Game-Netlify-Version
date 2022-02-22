@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#2b2d42] py-10 px-16 text-[#edf2f4] font-Lato">
+    <header class="">
+      <section class="flex items-center justify-between">
+        <div>
+          <button class="btn again">Try Again!</button>
+        </div>
+        <div class="flex flex-col items-center">
+          <h1 class="mb-8 font-black text-7xl">Guessing Game!</h1>
+          <p class="text-2xl">Choose a Number Between 1 to 20!</p>
+        </div>
+        <div class="text-xl tracking-wider points">
+          <p>Score: <span class="score">20</span></p>
+          <p>Highscore: <span class="highscore">0</span></p>
+        </div>
+      </section>
+    </header>
+    <main class="flex flex-col items-center justify-center">
+      <div
+        class="circle mb-10 w-80 h-80 border-4 border-[#d90429] rounded-full flex justify-center items-center"
+      >
+        <p class="text-6xl number">?</p>
+      </div>
+      <p class="text-4xl message">👻 Start The Game!</p>
+      <div class="flex mt-14">
+        <input type="number" placeholder="Enter a number:" class="mr-8 guess" />
+        <button class="btn check">Check!</button>
+      </div>
+    </main>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
